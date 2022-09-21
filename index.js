@@ -20,6 +20,7 @@ app.use(cookieparser());
 app.use(express.json());
 
 //Route
+app.get('/home', (res, req) => res.send("Hello));
 app.use('/v1/auth', routerAuth);
 app.use('/v1/user', routerUser);
 app.use('/v2/language', routeLanguage);
