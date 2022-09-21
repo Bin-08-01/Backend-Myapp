@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 //Connect Database
-mongoose.connect(process.env.MONGODB_URL, () => {
+mongoose.connect(mongodb+srv://minhtri21:minhtri21@cluster0.atfcmke.mongodb.net/?retryWrites=true&w=majority, () => {
     console.log("Connect successfully");
 })
 
