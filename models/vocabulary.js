@@ -26,6 +26,15 @@ const vocabularySchema = new mongoose.Schema({
         default: false
     },
 
+    wordType: {
+        type: String,
+        default: "",
+    },
+
+    group: {
+        type: String,
+    },
+
     idUser: {
         type: String,
         require: true

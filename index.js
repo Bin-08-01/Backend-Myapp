@@ -24,4 +24,4 @@ app.use('/v1/auth', routerAuth);
 app.use('/v1/user', routerUser);
 app.use('/v2/language', routeLanguage);
 
-app.listen(process.env.PORT, () => console.log('Server is running ...'));
+app.listen(process.env.PORT || 3107, () => console.log('Server is running ...'));
